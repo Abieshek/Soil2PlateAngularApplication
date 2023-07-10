@@ -1,0 +1,21 @@
+<div class="logo">
+  <img src="../../assets/images/Soile2PlateLogo.png" alt="Logo">
+</div>
+
+<!-- <div class="card" style="width: 18rem;" *ngFor="let produce of produces">
+    <img [src]="produce.imageLink" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">{{produce.name}}</h5>
+      <a   class="btn btn-primary">Show {{produce.name}} details</a>
+    </div>
+  </div> -->
+
+  <div class="card"  *ngFor="let produce of produces">
+    <a>
+      <img [src]="produce.imageLink" class="card-img-top" >
+      <div class="card-body">
+        <h5 class="card-title">Edit {{produce.name}} details</h5>
+        
+      </div>
+    </a>
+  </div>

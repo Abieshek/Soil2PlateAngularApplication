@@ -1,0 +1,75 @@
+<div class="logo">
+  <img src="../../assets/images/Soile2PlateLogo.png" alt="Logo">
+</div>
+
+
+<div class="form-container">
+<form>
+
+  <h2>Create a Produce Listing</h2>
+
+  <label class="label">Produce Name:</label>
+  <input type="text" placeholder="Granny Smith Apple" class ="input" name = "name" [(ngModel)]="name" />
+
+  <label class="label">Produce Type:</label>
+  <input type="email" placeholder="Fruit" class ="input" name = "type" [(ngModel)]="type" />
+
+  <label class="label">Price:</label>
+  <input type="text" placeholder="$1.99 / LB" class ="input" name = "price" [(ngModel)]="price" />
+
+  <label class="label">Quantity:</label>
+  <input type="text" placeholder="500" class ="input" name = "quantity" [(ngModel)]="quantity" />
+
+  <label class="label">Description:</label>
+  <input type="text" placeholder="Organic and Pesticide Free" class ="input" name = "description" [(ngModel)]="description" />
+
+  <label class="label">Available From:</label>
+  <input type="date" placeholder="mm/dd/yyyy" class ="input" name = "quantity" [(ngModel)]="availableFrom" />
+
+  <label class="label">Available Until:</label>
+  <input type="date" placeholder="mm/dd/yyyy" class ="input" name = "description" [(ngModel)]="availableUntil" />
+
+  <h6>Surplus Status:</h6>
+  <label class="radio-label1" for="isSurplus"><input class="radio-button" type="radio" name="surplusStatus" id="surplusStatus" value= "True" [(ngModel)] = "surplusStatus"/>
+    True</label>
+
+  <label class="radio-label1" for="isSurplus"><input class="radio-button" type="radio" name="surplusStatus" id="surplusStatus" value= "False" [(ngModel)] = "surplusStatus"/>
+      False</label>
+
+  <label class="label">Produce CO2:</label>
+  <input type="text" placeholder="1.99 CO2/KG" class ="input" name = "produceCo2" [(ngModel)]="produceCo2" />
+
+  <label class="label">Calories:</label>
+  <input type="text" placeholder="50" class ="input" name = "calories" [(ngModel)]="calories" />
+
+  <label class="label">Vitamins:</label>
+  <input type="text" placeholder="Vitamin A" class ="input" name = "vitamins" [(ngModel)]="vitamins" />
+
+  <label class="label">Allergies:</label>
+  <input type="text" placeholder="Soy" class ="input" name = "allergyInformation" [(ngModel)]="allergyInformation" />
+
+  <label class="label">Image Link:</label>
+  <input type="text" placeholder="https://upload.wikimedia.org/wikipedia/commons/7/75/FreeRangeEgg.jpg" class ="input" name = "imageLink" [(ngModel)]="imageLink" />
+
+  <label class="label">Food Category:</label>
+  <select [(ngModel)] = "foodObj" > 
+    <option *ngFor="let food of foods" [ngValue] = "food">
+      {{food.name}}
+    </option>
+  </select>
+
+</form>
+
+  <button type="button" (click)="createNewProduce()" class="register-button">Create Listing</button>
+
+
+  
+<script type="text/javascript">
+  $(function() {
+    $('#datepicker').datepicker();
+  });
+</script>
+
+
+
+

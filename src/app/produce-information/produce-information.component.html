@@ -1,0 +1,94 @@
+<div class="produce-image">
+    <img [src]="this.produce.imageLink" alt="...">
+</div>
+
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class ="bg-primary"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-name">{{produce.name}}:  </h5>
+              <h2 class="card-title">${{produce.price}}</h2>
+              
+              
+              <h6 class="card-title">In Stock: {{produce.quantity}}</h6>
+              <br>
+              
+              <h6 class="card-title text-success">CO2 Offset</h6>
+              <h6 class="card-title text-success">{{produce.produceCO2}} Kg C02</h6>
+              <br>
+              <h6 class="card-title">Available Until: {{produce.availableUntil | date}}</h6>
+              
+              <br>
+              <h6 class="card-title">Description:</h6>
+              <p class="card-text">{{produce.description}}</p>
+              <br>
+              
+
+              
+
+              <div class="center-container">
+                <label for="quantityAdded" class="card-title">Quantity:</label>
+                <input type="number" id="quantityAdded" class="quantity-input" name="quantityAdded" [(ngModel)]="newOrderLine.quantitySelected">
+                 </div>
+                 <br>
+                 <br>
+                <button class="btn btn-success" (click)="addToCart()">Add to Cart</button>
+                <br>
+                <br>
+                <br>
+
+             
+              
+
+
+              <!-- Quantity: <input type="number" name = "quantityAdded" [(ngModel)] = "newOrderLine.quantitySelected"> 
+              <button class="btn btn-success" (click)="addToCart()">Add to Cart</button> -->
+
+            </div>
+            
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="card" >
+            <div class="card-body">
+              <br>
+              <img src="../../assets/images/Chart.png" class="d-block w-100" alt="...">
+              <br>
+              <h6 class="card-title text-center">Your C02 Offset Explained</h6>
+              <p class="card-text">By purchasing these eggs through us you are helping the environment by offsetting your CO2 emissions in the chart above. With your help we will reach our goal of being carbon negative.</p>
+              <h6 class="card-title">Calories:</h6>
+              <p class="card-text">{{produce.calories}}</p>
+              <h6 class="card-title">Allergy Information: </h6>
+              <p class="card-text">{{produce.allergyInformation}}</p>
+              <h6 class="card-title">Vitamins:</h6>
+              <p class="card-text">{{produce.vitamins}}</p><br>
+            <br>
+            </div>
+            
+        </div>
+        
+      </div>
+
+      
+    </div>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+        
+    </div>
+
+

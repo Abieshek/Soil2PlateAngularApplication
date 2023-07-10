@@ -1,0 +1,14 @@
+<div class="logo">
+  <img src="../../assets/images/Soile2PlateLogo.png" alt="Logo">
+</div>
+
+
+<div class="card"  *ngFor="let produce of produces">
+  <a [routerLink]="['/ProduceInformation', produce.produceID]">
+    <img [src]="produce.imageLink" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">{{produce.name}}</h5>
+      
+    </div>
+  </a>
+</div>

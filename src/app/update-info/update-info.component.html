@@ -1,0 +1,48 @@
+<div class="logo">
+  <img src="../../assets/images/Soile2PlateLogo.png" alt="Logo">
+</div>
+
+
+<div class="form-container">
+  <form>
+      <h2>Update your Farmer Account Credentials</h2>
+  
+      <label class="label">Your Name:</label>
+      <input type="text" placeholder="John Doe" class ="input" name = "name" [(ngModel)]="name" required />
+  
+      <label class="label">Email:</label>
+      <input type="email" placeholder="john.doe@gmail.com" class ="input" name = "email" [(ngModel)]="email" required />
+  
+      <label class="label">Password:</label>
+      <input type="text" placeholder=" " class ="input" name = "password" [(ngModel)]="password" required />
+  
+      <label class="label">Phone Number:</label>
+      <input type="number" placeholder="4044040404" class ="input" name = "phoneNumber" [(ngModel)]="phoneNumber" required />
+  
+      <label class="label">Certification:</label>
+      <input type="text" placeholder="USDA Organic" class ="input" name = "certifications" [(ngModel)]="certifications" required />
+  
+      <label class="label">Energy Usage in kWH:</label>
+      <input type="number" placeholder="25" class ="input" name = "energyUsage" [(ngModel)]="energyUsage" required />
+  
+      <label class="label">Unit Number:</label>
+      <input type="text" placeholder="301" class ="input" name = "unitNumber" [(ngModel)]="unitNumber" required/>
+  
+      <label class="label">Street Name:</label>
+      <input type="text" placeholder="Cherry Blossom Dr." class ="input" name = "streetName" [(ngModel)]="streetName" required />
+  
+      <label class="label">City:</label>
+      <input type="text" placeholder="Atlanta" class ="input" name = "city" [(ngModel)]="city" required />
+  
+      <label class="label">State:</label>
+      <input type="text" placeholder="GA" class ="input" name = "state" [(ngModel)]="state" required/>
+  
+      <label class="label">Zip Code:</label>
+      <input type="text" placeholder="30033" class ="input" name = "zipCode" [(ngModel)]="zipCode" required />
+  
+      <button type="button" (click)="updateInfo()" class="register-button">Update</button>
+  
+      
+  
+  </form>
+  </div>

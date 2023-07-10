@@ -1,0 +1,94 @@
+<!-- <p>login works!</p>
+<div class="container-fluid">
+<form>
+      <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" name = "userEmail" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="userEmail" required>
+      <small class ="text-danger" id="emailHelp">{{msg}}</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" name = "userPassword" class="form-control"  placeholder="Password" [(ngModel)]="userPassword" required>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button (click)="loginUser()" class="btn btn-primary">Login</button>
+  </form>
+</div> -->
+
+
+<!-- <div class="container login-container">
+  <div class="row">
+      <div class="col-md-6 login-form-1">
+          <h3>Login Form </h3>
+          
+              <div class="form-group">
+                  <input type="text" name = "userEmail" class="form-control" placeholder="Your Email *" value="" [(ngModel)]="userEmail" required />
+              </div>
+            <br/>
+              <div class="form-group">
+                  <input type="password" name = "userPassword" class="form-control" placeholder="Your Password *" value="" [(ngModel)]="userPassword" required />
+              </div>
+          
+              <div class="col-md-6 mb-4">
+                <h6 class="mb-2 pb-1 text-light" > User Type: </h6>
+                <div class="form-check form-check-inline ">
+                  <input class="form-check-input" type="radio" name="userType" id="farmer"
+                  value="isFarmer"  [(ngModel)] = "userType" />
+                  <label class="form-check-label text-light" for="farmer">Farmer</label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="userType" id="consumer"
+                  value= "isConsumer" [(ngModel)] = "userType"/>
+                  <label class="form-check-label text-light" for="consumer">Customer</label>
+                </div>
+                
+              </div>
+              <small class ="text-danger" id="emailHelp">{{msg}}</small>
+              <div class="form-group">
+                  <input type="submit" (click)="loginUser()" class="btnSubmit" value="Login" />
+              </div>
+              <div class="form-group">
+                  <a routerLink="#" class="btnForgetPwd">Forget Password?</a>
+              </div>
+          
+      </div> -->
+
+
+
+
+      <div class="logo">
+        <img src="../../assets/images/Soile2PlateLogo.png" alt="Logo">
+    </div>
+    
+    
+    <div class="form-container">
+    <form>
+        <h2>Login</h2>
+    
+        <label class="label">Email:</label>
+        <input type="email" placeholder="john.doe@gmail.com" class ="input" name = "userEmail" [(ngModel)]="userEmail" required />
+    
+        <label class="label">Password:</label>
+        <input type="text" placeholder=" " class ="input" name = "userPassword" [(ngModel)]="userPassword" required/>
+
+        <h6>Account Type</h6>
+
+        <label class="radio-label1" for="isConsumer"><input class="radio-button" type="radio" name="userType" id="consumer" value= "isConsumer" [(ngModel)] = "userType"/>
+        Customer</label>
+
+       <label class="radio-label2" for="isFarmer"><input class="radio-button" type="radio" name="userType" id="farmer" value="isFarmer"  [(ngModel)] = "userType" />
+        Farmer</label>
+            
+        <button type="button" (click)="loginUser()" class="register-button">Login</button>
+        <small class ="text-danger" id="errorMessage">{{msg}}</small>
+
+        <p class="existing-member">New Member?&nbsp; <a routerLink="/SignUp"> Sign Up Here</a></p>
+        <p class="existing-member">Forgot Password?&nbsp; <a routerLink="#"> Click Here</a></p>
+    
+    </form>
+    </div>
+
+

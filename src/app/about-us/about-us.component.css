@@ -1,0 +1,25 @@
+.page-container {
+    position: relative;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ .header-container,
+ .header-container-1,
+ .header-container-2 {
+    padding: 20px;
+    color: #2D0C57;
+ }
+
+
+  @media screen and (max-width: 600px) {
+
+    .paragraph-container-1,
+    .paragraph-container-2,
+    .paragraph-container-3 {
+      padding: 15px;
+    }
+  }

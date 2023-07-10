@@ -1,0 +1,53 @@
+<div class="logo">
+    <img src="../../assets/images/Soile2PlateLogo.png" alt="Logo">
+</div>
+
+
+<div class="form-container">
+<form>
+    <h2>Create an account: Farmer</h2>
+
+    <label class="label">Your Name:</label>
+    <input type="text" placeholder="John Doe" class ="input" name = "userName" [(ngModel)]="userName" />
+
+    <label class="label">Email:</label>
+    <input type="email" placeholder="john.doe@gmail.com" class ="input" name = "userEmail" [(ngModel)]="userEmail" />
+
+    <label class="label">Password:</label>
+    <input type="text" placeholder=" " class ="input" name = "userPassword" [(ngModel)]="userPassword" />
+
+    <label class="label">Repeat Password:</label>
+    <input type="text" placeholder=" " class ="input" name = "userPassword2" [(ngModel)]="userPassword2" />
+
+    <label class="label">Phone Number:</label>
+    <input type="number" placeholder="4044040404" class ="input" name = "phoneNumber" [(ngModel)]="phoneNumber" />
+
+    <label class="label">Certification:</label>
+    <input type="text" placeholder="USDA Organic" class ="input" name = "certifications" [(ngModel)]="certifications" />
+
+    <label class="label">Energy Usage in kWH:</label>
+    <input type="number" placeholder="25" class ="input" name = "energyUsage" [(ngModel)]="energyUsage" />
+
+    <label class="label">Unit Number:</label>
+    <input type="text" placeholder="301" class ="input" name = "unitNumber" [(ngModel)]="unitNumber" />
+
+    <label class="label">Street Name:</label>
+    <input type="text" placeholder="Cherry Blossom Dr." class ="input" name = "streetName" [(ngModel)]="streetName" />
+
+    <label class="label">City:</label>
+    <input type="text" placeholder="Atlanta" class ="input" name = "city" [(ngModel)]="city" />
+
+    <label class="label">State:</label>
+    <input type="text" placeholder="GA" class ="input" name = "state" [(ngModel)]="state" />
+
+    <label class="label">Zip Code:</label>
+    <input type="text" placeholder="30033" class ="input" name = "zipCode" [(ngModel)]="zipCode" />
+
+    <button type="button" (click)="createNewFarmer()" class="register-button">Register</button>
+    <p class="text-danger text-center">{{msg}}</p>
+    
+    <p class="existing-member">Already a member?&nbsp; <a routerLink="/Login">Login Here</a></p>
+   
+
+</form>
+</div>

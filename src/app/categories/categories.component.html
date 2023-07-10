@@ -1,0 +1,16 @@
+
+
+<div class="logo">
+  <img src="../../assets/images/Soile2PlateLogo.png" alt="Logo">
+</div>
+
+
+<div class="card" *ngFor="let food of foods">
+  <a [routerLink]="['/ProducePage', food.foodId]">
+    <img [src]="food.imageLink" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">{{food.name}}</h5>
+    </div>
+  </a>
+  </div>
+  

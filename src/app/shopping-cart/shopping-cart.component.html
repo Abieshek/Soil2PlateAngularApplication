@@ -1,0 +1,11 @@
+<div class="card" *ngFor="let cart of cartArray">
+    <img [src]="cart.prod.imageLink" class="card-img-top" >
+    <div class="card-body">
+        <h5 class="card-title">{{cart.prod.name}}</h5>
+        <h5 class="card-title">Quantity: {{cart.ord.quantitySelected}}</h5>
+        <a class="btn btn-danger" (click) ="deleteCartItem(cart.ord.orderLineId)"> Delete</a>
+    </div>
+</div> 
+<div> 
+    <a class="btn btn-primary" routerLink = "/thankyou"> Confirm Your Order</a>
+</div>
