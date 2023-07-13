@@ -1,6 +1,6 @@
 # Soil2PlateFrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3. This product is part of an enterprise application interfaces with 3 microservices VIA REST APIs. Those microservices are connected to an SQL backend!
 
 ## Development server
 
