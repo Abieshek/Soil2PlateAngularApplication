@@ -1,6 +1,8 @@
 # Soil2PlateFrontEnd
+This application is part of a full stack microservice-based enterprise application interfaces with 3 microservices (Soil2PlateCartService, Soil2PlateUserService, Soil2PlateProduceService) VIA REST APIs. The microservices themselves use JPA and hibernate to interaface with the SQL backend from which data is stored and pulled.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3. This product is part of an enterprise application interfaces with 3 microservices VIA REST APIs. Those microservices are connected to an SQL backend!
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3. 
 
 ## Development server
 
